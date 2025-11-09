@@ -217,12 +217,6 @@ class Pipe:
         return urls
 
     def _image_pipe(self, model_id: str, body: dict) -> Union[str, dict]:
-        """
-        SiliconFlow /images/generations
-        - text-to-image: require image_size
-        - image-to-image (Qwen-Image-Edit*): do NOT send image_size; require input image
-        - 'image' accepts a data URI or http(s) URL
-        """
         prompt = self._last_user_text(body["messages"])
         is_edit = self._is_allowed_image_edit(model_id)
         is_qwen_image = model_id.startswith("Qwen/Qwen-Image")
