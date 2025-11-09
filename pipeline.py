@@ -5,18 +5,6 @@ author_url: https://github.com/ivanreeve/
 project_url: https://github.com/ivanreeve/siliconflow-manifold
 version: 0.9.0
 license: Apache License 2.0
-description: A comprehensive Open WebUI manifold pipe for seamless integration with SiliconFlow's API, providing dynamic access to text chat models, text-to-image generation, and image-to-image editing capabilities. Automatically discovers and caches available models, handles authentication, and manages streaming responses with built-in regional failover support.
-features:
-  - Dynamic model discovery: Automatically fetches and caches available chat and image models from SiliconFlow (10-minute TTL)
-  - Text chat support: Full SSE streaming for real-time chat completions with system message handling and multi-part content extraction
-  - Text-to-image generation: Creates images from prompts with model-specific defaults (Qwen: 1328x1328, Kolors: 1024x1024)
-  - Image-to-image editing: Supports Qwen-Image-Edit models with multi-image input capability (up to 3 images)
-  - Model-specific parameters: Intelligent handling of batch_size, guidance_scale, cfg, negative_prompt, seed, and inference steps
-  - Streaming response handling: Preserves native SSE formatting with proper data: prefixes and [DONE] markers
-  - Regional failover: Automatic endpoint switching between api.siliconflow.com and api.siliconflow.cn for global accessibility
-  - Robust error handling: Graceful request exception management with timeout protection (connect: 3.05s, read: 10-300s)
-  - Bearer token authentication: Secure API key management via environment variables
-  - Message normalization: Converts Open WebUI format to SiliconFlow API specification
 """
 
 import os
