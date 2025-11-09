@@ -2,7 +2,7 @@
 title: SiliconFlow Manifold Pipeline
 author: ivanreeve
 author_url: https://github.com/ivanreeve/
-project_url: https://github.com/owndev/siliconflow-manifold
+project_url: https://github.com/ivanreeve/siliconflow-manifold
 version: 0.9.0
 license: Apache License 2.0
 description: A comprehensive Open WebUI manifold pipe for seamless integration with SiliconFlow's API, providing dynamic access to text chat models, text-to-image generation, and image-to-image editing capabilities. Automatically discovers and caches available models, handles authentication, and manages streaming responses with built-in regional failover support.
